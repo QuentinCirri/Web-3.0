@@ -6,9 +6,9 @@
 * {
   font-family: "Inter", sans-serif;
 }
-/*img {
+img {
   width: 100%;
-}*/
+}
 body {
   width: 1110px;
   margin: 0 auto;
@@ -111,6 +111,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
+/*
+.gridint {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+*/
 .img2 {
   grid-column: 1;
   justify-self: center;
@@ -119,18 +125,18 @@ h3 {
   grid-column: 2;
 }
 .img3 {
-  grid-column: 3;
+  grid-column: 3; /*1 */
   justify-self: center;
 }
 .col2 {
-  grid-column: 4;
+  grid-column: 4; /*2 */
 }
 .img4 {
-  grid-column: 5;
+  grid-column: 5; /*1 */
   justify-self: center;
 }
 .col3 {
-  grid-column: 6;
+  grid-column: 6; /*2 */
 }
 
 .allimg {
@@ -157,6 +163,8 @@ h4 {
 @media screen and (max-width: 375px) {
   body {
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .containerh {
     margin-top: 40px;
@@ -175,8 +183,6 @@ h4 {
     display: block;
   }
   .img1 {
-    width: 343px;
-    height: 300px;
   }
   .start {
     margin-top: 40px;
@@ -190,6 +196,7 @@ h4 {
   .yellow {
     font-size: 32px;
     line-height: 32px;
+    padding-top: 10px;
   }
   hr {
     margin-left: 0;
@@ -204,7 +211,7 @@ h4 {
   }
   .side {
     width: 343px;
-    height: 489px;
+    height: 400px;
   }
   h3 {
   }
@@ -212,31 +219,38 @@ h4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-top: 60px;
   }
   .img2 {
     width: 100%;
     grid-column: 1;
+    margin-top: 20px;
   }
   .col1 {
     grid-column: 2;
+    margin-top: 20px;
   }
   .img3 {
     width: 100%;
     grid-column: 1;
     grid-row: 2;
+    margin-top: 20px;
   }
   .col2 {
     grid-column: 2;
     grid-row: 2;
+    margin-top: 20px;
   }
   .img4 {
     width: 100%;
     grid-column: 1;
     grid-row: 3;
+    margin-top: 20px;
   }
   .col3 {
     grid-column: 2;
     grid-row: 3;
+    margin-top: 20px;
   }
   .allimg {
     width: 100px;
@@ -248,10 +262,11 @@ h4 {
     font-size: 20px;
   }
   .sidep {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-bottom: 20px;
     margin-top: 10px;
   }
   .lastp {
+    margin-top: 5px;
   }
 }
